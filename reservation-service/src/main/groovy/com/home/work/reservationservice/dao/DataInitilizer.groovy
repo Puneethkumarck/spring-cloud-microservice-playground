@@ -16,7 +16,7 @@ class DataInitilizer  implements CommandLineRunner{
     @Override
     void run(String... strings) throws Exception {
 
-        ["Josh","Jaya","John","Danny","Brain","Quyen","Dan","Alex"].forEach({
+        ["puneeth","manoj","muni","rangee","pradeep","quancy","josh","kabali"].forEach({
 
             name -> reservationRepository.save(new Reservation(null,name,new Date(),new Date()))
         })
